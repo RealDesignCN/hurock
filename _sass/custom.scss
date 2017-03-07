@@ -37,7 +37,7 @@
   a.link-to-college
   {
     width: 280px;
-    margin: 18px 8px;
+    margin: 8px 8px;
     border-radius: 24px;
     padding: 6px 12px;
     letter-spacing: 0;
@@ -65,14 +65,11 @@
 
 .site-header{
   margin: 0;
-  padding: 6px 0 12px;
+  padding: 18px 0 18px;
   border: 0;
   .menu{
     padding: 24px 0 0 0;
   }
-}
-.site-header .wrapper{
-  padding-top: 18px;
 }
 
 .site-footer{
@@ -163,12 +160,16 @@
   margin: auto;
   padding: 0;
   h2{
-    padding: 12px 0;
-    margin: 12px 0;
+
     border-bottom: solid 1px #000000;
   }
   p{
     line-height: 1.6em;
+    padding: 8px 0;
+  }
+}
+.post.about{
+  p{
     padding: 8px 0;
   }
 }
@@ -181,7 +182,12 @@
   background-position: center left;
 }
 .post-content{
-  h2{ font-size: 38px; color:#433C3D;}
+  h2{
+    font-size: 38px;
+    color:#433C3D;
+    padding: 12px 0;
+    margin: 18px 0;
+  }
   font-size: 14px;
   margin: 20px auto;
   .section{
@@ -286,32 +292,27 @@
   height: 184px;
   text-align: center;
 }
-body.zh{
-  .post-title{
-    padding:  6px 0 6px 50px;
-  }
+.site-nav  li.page-link-wrapper{
+  float: left;
+  padding: 0  32px;
+  border-right: solid 1px gray;
 }
 
+
+.site-nav .page-link{
+  letter-spacing: normal;
+  font-size: 14px;
+  padding: 4px 1px;
+  &:hover   {text-decoration: none;border-bottom: solid 2px red; }
+  &:link    {}
+  &:visited {}
+  &:active  {}
+}
 body.en{
   .site-nav{
 
   }
-  .site-nav  li.page-link-wrapper{
-    float: left;
-    padding: 0  32px;
-    border-right: solid 1px gray;
-  }
 
-
-  .site-nav .page-link{
-    letter-spacing: normal;
-    font-size: 14px;
-    padding: 4px 1px;
-    &:hover   {text-decoration: none;border-bottom: solid 2px red; }
-    &:link    {}
-    &:visited {}
-    &:active  {}
-  }
   .product p{
     margin:  0 12px 8px 0;
   }
@@ -322,30 +323,6 @@ body.en{
     background-image:  url('/assets/images/nutrition-en.png');
   }
 
-  .post-title-l{
-    background-image:  url('/assets/images/title-bg-l.png');
-  }
-}
-body.fr{
-  .site-nav-pc{
-      line-height: 46px;
-  }
-  .site-nav-pc .page-link{
-    letter-spacing: normal;
-    font-size: 14px;
-    padding: 12px 0 21px 0;
-
-  }
-  .product p{
-    margin:  0 12px 8px 0;
-
-  }
-  .product-desc{
-
-  }
-  .nutrition{
-    background-image:  url('/assets/images/nutrition-fr.png');
-  }
   .post-title-l{
     background-image:  url('/assets/images/title-bg-l.png');
   }
