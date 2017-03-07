@@ -5,9 +5,6 @@
       <img alt="{{ site.title | escape }}" src="{{ "/assets/images/logo.png" | prepend: site.baseurl }}" />
     </a>
 
-
-
-
     <nav class="site-nav f-fr">
       <span class="menu-icon">
         <svg viewBox="0 0 18 15" width="18px" height="15px">
@@ -18,7 +15,11 @@
       </span>
 
       <div class="trigger">
-        <ul class="f-cbli">
+        <ul class="f-fr locales">
+          <li class="locale locale-en"><a href="/en" class=""> English   </a></li>
+          <li class="locale locale-cn"><a href="/" class="locale-cn"> 中文 </a></li>
+        </ul>
+        <ul class="f-fr menu">
         {% for my_page in site.pages %}
           {% if my_page.lang == page.lang %}
             {% if my_page.title == page.title %}
@@ -28,10 +29,7 @@
             {% endif %}
           {% endif %}
         {% endfor %}
-
-          <li class="locale"><a href="/en" class="locale-en"> English   </a></li>
-          <li class="locale"><a href="/" class="locale-zh"> 中文 </a></li>
-        </ul>
+      </ul>
       </div>
     </nav>
 
