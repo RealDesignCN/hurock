@@ -122,33 +122,9 @@
 }
 @media screen and (min-width: $on-pc) {
 
-  .site-nav-pc {
-    padding: 0 0 0 5px;
-    background-image: url('/assets/images/nav.png');
-    background-position: top left;
-    background-repeat: no-repeat;
-    line-height: 48px;
+  .site-nav .page-link.page-link-active{
+    text-decoration: none;border-bottom: solid 2px red;
   }
-  .site-nav-pc .page-link{
-    color: #00C3DC;
-    font-size: 16px;
-    text-decoration: none;
-    letter-spacing: 6px;
-    display: inline-block;
-    width: 130px;
-    text-align: center;
-    padding: 12px 0 20px 0;
-  }
-  .site-nav-pc .page-link.page-link-active{
-    color: #ffffff;
-  }
-  .site-nav-pc .page-link:hover{
-    color: #ffffff;
-    background-image:  url('/assets/images/nav-hl.png');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-  }
-
 }
 
 .post{
@@ -169,6 +145,8 @@
   }
 }
 .post.about{
+  width: 1000px;
+  margin: auto;
   p{
     padding: 8px 0;
   }
@@ -308,23 +286,13 @@
   &:visited {}
   &:active  {}
 }
-body.en{
+body.zh{
   .site-nav{
 
   }
 
-  .product p{
-    margin:  0 12px 8px 0;
-  }
-  .product-desc{
-
-  }
-  .nutrition{
-    background-image:  url('/assets/images/nutrition-en.png');
-  }
-
-  .post-title-l{
-    background-image:  url('/assets/images/title-bg-l.png');
+  .post{
+    line-height: 1.6em;
   }
 }
 

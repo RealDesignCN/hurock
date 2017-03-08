@@ -1,6 +1,8 @@
 // Define defaults for each variable.
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family:  Arial,"PingFang SC","Noto Sans",Roboto,"Microsoft Yahei",sans-serif;
+// Helvetica 360 兼容模式下产生乱码。
+//"Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
